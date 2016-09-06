@@ -1,0 +1,79 @@
+
+--------------------------------------------GUI------------------------------------------------
+-------------------------------------------Notes-----------------------------------------------
+Adding Notes:
+
+    -   ALT + Drag
+
+
+Removing Notes:
+
+    -   CTRL + Click
+
+
+Moving Notes:
+
+    -   Shift + Drag
+
+
+----------------------------------------Composition---------------------------------------------
+
+Adding Entire-Song Repeats:
+
+    -   Shift + {1..9}
+
+
+Adding Partial Repeats:
+
+    -   CTRL + A, CTRL + A, CTRL + {1..9}
+
+        -   ALT + A to create pairs of beats.
+            -   Use cursor to move, and press Key Combination to set beat.
+
+
+Adding Multiple Repeats/Alternate Endings:
+
+    -   ALT + A ..., ALT + E
+
+        -   ALT + A to create pairs of beats.
+            -   Use cursor to move, and press Key Combination to set beat.
+        -   ALT + E to create the Endings
+            -   Will ignore if you didn't finish creating an interval
+                (i.e., you pressed ALT + A an odd number of times)
+
+Canceling/Removing All Endings:
+
+    -   Shift + C
+
+        -   Resets all Repeat/Alternate Ending Bindings
+
+
+
+
+---------------------------------------Model/Files-----------------------------------------------
+
+-----------------------------------------Repeats-------------------------------------------------
+
+Simple:
+
+    -   repeat <loop-num>
+        -   repeat 2
+
+
+Bounded:
+
+    -   repeat-bound <loop-num> <start-beat> <end-beat>
+        -   eg. repeat-bound 3 16 32
+
+
+Alternate Endings:
+
+    -   alt-end <start-beat> <end-beat>) ...
+        -   eg. alt-end 16 32
+
+
+Combo:
+
+    -   Bounded + Alternate Ending
+        -   eg. repeat-bound 3 8 16
+                alt-end 16 32
